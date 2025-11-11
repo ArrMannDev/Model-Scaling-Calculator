@@ -40,7 +40,8 @@ export default function ModelScalingCalculator() {
         AI Model Scaling Calculator
       </h2>
       <p className="text-center text-gray-500 mb-6">
-        Estimate how model size affects training cost, memory, and inference speed
+        Estimate how model size affects training cost, memory, and inference
+        speed
       </p>
 
       {/* Slider control */}
@@ -116,7 +117,12 @@ export default function ModelScalingCalculator() {
             dot
           />
         </LineChart>
-      </ResponsiveContainer>       
+      </ResponsiveContainer>
+
+      <p className="text-sm text-gray-500 mt-6 text-center">
+        💡 Training compute grows quadratically, memory grows linearly, and
+        inference speed per GPU decreases with model size.
+      </p>
     </div>
   );
 }
